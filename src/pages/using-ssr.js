@@ -37,6 +37,7 @@ export const Head = () => <Seo title="Using SSR" />
 export default UsingSSR
 
 export async function getServerData() {
+  console.log('Runtime Node Version: ', process.version);
   try {
     const res = await fetch(`https://dog.ceo/api/breed/shiba/images/random`)
     if (!res.ok) {

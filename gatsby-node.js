@@ -8,6 +8,7 @@
  * @type {import('gatsby').GatsbyNode['createPages']}
  */
 exports.createPages = async ({ actions }) => {
+  console.log('Runtime Node Version during build: ', process.version);
   const { createPage } = actions
   createPage({
     path: "/using-dsg",
