@@ -4,6 +4,7 @@ export default function handler(req, res) {
   res
     .status(200)
     .json({
-      key: "val"
+      key: "val",
+      nodeVersion: process.version
     })
 }
